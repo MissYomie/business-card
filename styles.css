@@ -1,0 +1,80 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Lucida Console', Monaco, monospace;
+    
+}
+
+.avatar {
+    width: 150px;
+    border: 2px solid; 
+    border-radius: 10px;
+    border-top: 2px dotted #404556;
+    border-left: 2px dotted #404556;
+    box-shadow: 2px 2px 2px 2px #20504e;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #17292b;
+    color: #777076;
+    border-bottom: 10px solid #60515c;
+    border-right: 10px solid #60515c;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top: 5px solid #777076;
+    border-left: 5px solid #777076;
+    box-shadow: 8px 8px 0 #252933;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.card:hover {
+    transform: translateY(5px);
+    box-shadow: 12px 12px 0 #597d7c;
+}
+
+@keyframes pulse-glow {
+    0% {
+        text-shadow: 0 0 5px #597d7c;
+    }
+    50% {
+        text-shadow: 0 0 15px #597d7c, 0 0 25px #597d7c;
+    }
+    100% {
+        text-shadow: 0 0 5px #597d7c;
+    }
+}
+
+.card h3 {
+    text-shadow: 0 0 10px #597d7c;
+    animation: pulse-glow 6s infinite ease-in-out;
+}
+
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
